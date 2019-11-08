@@ -1,0 +1,11 @@
+<div class="card mb-2" >
+  <div class="card-header pointerCorsur" (click)="isHidden = !isHidden">
+    <h3 class="card-title">{{title}}</h3>
+  </div>
+  <div class="card-body" [class.bgColor]="hasJustViewed" *ngIf="isHidden">
+    <ng-content select=".myPannelBody"></ng-content>
+  </div>
+  <div class="card-footer" *ngIf="isHidden">
+    <ng-content select=".myPannelFooter"></ng-content>
+  </div>
+</div>

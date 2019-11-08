@@ -1,0 +1,18 @@
+<div class="container fillWidth" style="background-color:coral">
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="list">List</a>
+      </li>
+      <li>
+          <a routerLink="create">Create</a>
+        </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  <dir class="row pb-5">
+    <div class="col-md-12">
+      <button class="btn btn-primary" (click)="onAccept()">Accept</button>
+    </div>
+  </dir>
+</div>
